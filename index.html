@@ -20,24 +20,38 @@
             width: 300px;
             text-align: center;
         }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="login-container">
-        <h2>Login</h2>
+<div class="login-container">
+    <h2>Login</h2>
 
-        <form onsubmit="return validateForm()">
-            <label>Email</label><br>
-            <input type="email" placeholder="Enter your email"><br><br>
+    <form onsubmit="return validateForm()">
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter email"><br>
 
-            <label>Password</label><br>
-            <input type="password" placeholder="Enter your password"><br><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter password"><br>
 
-            <button type="submit">Login</button>
-        </form>
-    </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
 
 <script>
 function validateForm() {
@@ -59,83 +73,5 @@ function validateForm() {
 }
 </script>
 
-        return true;
-    }
-
-</script>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .login-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-            width: 300px;
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-        }
-
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-    <style>
-    body {
-        font-family: Arial;
-        text-align: center;
-    }
-
-    .login-container {
-        margin-top: 50px;
-    }
-
-    input {
-        padding: 8px;
-        width: 200px;
-    }
-
-    button {
-        padding: 8px 15px;
-        margin-top: 10px;
-    }
-</style>
-<body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form>
-            <label>Email</label><br>
-            <input type="email" placeholder="Enter your email"><br>
-
-            <label>Password</label><br>
-            <input type="password" placeholder="Enter your password"><br>
-
-            <button type="submit">Login</button>
-        </form>
-    </div>
 </body>
 </html>
