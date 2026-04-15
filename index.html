@@ -39,15 +39,25 @@
         </form>
     </div>
 
-    <script>
-    function validateForm() {
-        let email = document.querySelector("input[type=email]").value;
-        let password = document.querySelector("input[type=password]").value;
+<script>
+function validateForm() {
+    let email = document.querySelector("input[type=email]").value;
+    let password = document.querySelector("input[type=password]").value;
 
-        if (email === "" || password === "") {
-            alert("All fields are required!");
-            return false;
-        }
+    if (email === "" || password === "") {
+        alert("All fields are required!");
+        return false;
+    }
+
+    if (email === "admin@test.com" && password === "1234") {
+        alert("Login successful");
+    } else {
+        alert("Invalid credentials");
+    }
+
+    return false;
+}
+</script>
 
         return true;
     }
