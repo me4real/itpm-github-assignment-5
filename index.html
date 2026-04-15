@@ -2,8 +2,44 @@
 <html>
 <head>
     <title>Login Project</title>
+
     <style>
-        <script>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form onsubmit="return validateForm()">
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter your email"><br><br>
+
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter your password"><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+<script>
 function validateForm() {
     let email = document.querySelector("input[type=email]").value;
     let password = document.querySelector("input[type=password]").value;
@@ -13,13 +49,21 @@ function validateForm() {
         return false;
     }
 
-    return true;
+    if (email === "admin@test.com" && password === "1234") {
+        alert("Login successful");
+    } else {
+        alert("Invalid credentials");
+    }
+
+    return false;
 }
 </script>
+
+        return true;
+    }
+
+</script>
         body {
-            <form onsubmit="return validateForm()">
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
             display: flex;
             justify-content: center;
             align-items: center;
